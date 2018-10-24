@@ -1,0 +1,18 @@
+{ "projects": [{
+    "title": "Epicodus Student Loans",
+    "managers": "Colin and AJ",
+    "description": "Please help two struggling coding students repay their debts incurred from attending Epicodus.",
+    "goal": 25000,
+    "currentAmount": 32,
+    "swag": true,
+    "id": "1"
+  }, {
+    "title": "Save the beavers",
+    "managers": "Wildlife Association",
+    "description": "Your donations will help beavers have nice new homes with central heating",
+    "goal": 5000,
+    "currentAmount": 2500,
+    "swag": false,
+    "id": "2"
+  }]
+}
