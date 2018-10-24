@@ -1,6 +1,10 @@
 
 <div>
-  <h3>{{projectToDisplay.title}}</h3>
-  <h4>{{projectToDisplay.managers}}</h4>
-  <p>{{projectToDisplay.description}}</p>
+  <h3>{{(projectToDisplay | async)?.title}}</h3>
+  <h4>By {{(projectToDisplay | async)?.managers}}</h4>
+  <p>{{(projectToDisplay | async)?.description}}</p>
+  <h5>Current Progress: ${{(projectToDisplay | async)?.currentAmount}} raised of ${{(projectToDisplay | async)?.goal}}</h5>
+  <h6>Swag:</h6>
+  <h6 *ngIf="(projectToDisplay | async)?.swag">Yes</h6>
+  <h6 *ngIf="!(projectToDisplay | async)?.swag">No</h6>
 </div>

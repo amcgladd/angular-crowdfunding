@@ -4,6 +4,5 @@ export class Project {
                       public description: string,
                       public goal: number,
                       public currentAmount: number,
-                      public swag: boolean,
-                      public id: number){}
+                      public swag: boolean){}
                     }
